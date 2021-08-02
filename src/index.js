@@ -12,7 +12,7 @@ if (root && root.innerHTML !== '') {
   renderMethod = render
 }
 
-renderMethod(
+render(
   <Provider store={Store}>
     <App />
   </Provider>,

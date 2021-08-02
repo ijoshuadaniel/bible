@@ -10,6 +10,16 @@ import { Store } from '@redux/store.js'
 const app = express()
 app.use(express.static('./public'))
 
+const getHtml = (auth, renderData, data) => {
+  let html = data
+  html = html.replace("<div id='auth'></div>", `<div id='auth'>${auth}</div>`)
+  html = html.replace(
+    "<div id='root'></div>",
+    `<div id='root'>${renderData}</div>`
+  )
+  return html
+}
+
 app.use('/', (req, res) => {
   const response = fs.readFile(
     path.join(__dirname, 'public', 'index.html'),
@@ -28,12 +38,7 @@ app.use('/', (req, res) => {
           token: 'testToken',
           data: 'hello',
         }
-        res.send(
-          data.replace(
-            "<div id='root'></div>",
-            `<div id='root'>${renderedData}</div><script>auth= ${auth}</script>`
-          )
-        )
+        res.send(getHtml(auth, renderedData, data))
       }
     }
   )

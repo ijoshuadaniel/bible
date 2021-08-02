@@ -9,13 +9,5 @@
   background-color: $dark-purple;
   padding: 0 2rem;
   font-family: $primary;
-  font-weight: bold;
   color: $baby-powder;
-  &__menu {
-    &-startreading {
-      border: 1px solid $baby-powder;
-      border-radius: $borderRadius;
-      padding: 0.5rem 1rem;
-    }
-  }
 }

@@ -48,6 +48,8 @@
     "@style": "src/stylesheet/index.scss",
     "@components": "src/components",
     "@redux": "redux",
-    "@server": "server"
+    "@server": "server",
+    "@content": "constants/content.js",
+    "@u-Comp": "src/util-components"
   }
 }

@@ -1,0 +1,11 @@
+@import '@style';
+
+.utils-btn {
+  border: 1px solid $baby-powder;
+  border-radius: $borderRadius;
+  padding: 0.5rem 1rem;
+  font-family: $primary;
+  font-weight: bold;
+  color: $baby-powder;
+  cursor: pointer;
+}
