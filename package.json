@@ -10,7 +10,11 @@
     "dev": "npm-run-all --parallel dev:*",
     "dev:start": "nodemon --watch build  --exec \"node build/bundel.js\"",
     "dev:server": "webpack --config webpack.config.server.js --watch",
-    "dev:client": "webpack --config webpack.config.client.js --watch"
+    "dev:client": "webpack --config webpack.config.client.js --watch",
+    "only:client": "webpack --config webpack.config.client.js",
+    "only:server": "webpack --config webpack.config.server.js",
+    "postinstall": "link-module-alias",
+    "preinstall": "command -v link-module-alias && link-module-alias clean || true"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.8",
@@ -21,6 +25,7 @@
     "css-loader": "^6.2.0",
     "error-overlay-webpack-plugin": "^0.4.2",
     "html-webpack-plugin": "^5.3.2",
+    "link-module-alias": "^1.2.0",
     "mini-css-extract-plugin": "^2.1.0",
     "sass": "^1.37.0",
     "sass-loader": "^12.1.0",
@@ -34,5 +39,8 @@
     "npm-run-all": "^4.1.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
+  },
+  "_moduleAliases": {
+    "@style": "src/stylesheet/index.scss"
   }
 }
