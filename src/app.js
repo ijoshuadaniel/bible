@@ -1,12 +1,15 @@
 import React from 'react'
 import Body from '@components/body'
 import Header from '@components/header'
+import Routes from './routes'
+import { Switch } from 'react-router-dom'
 
-const App = () => {
+const App = ({ auth }) => {
+  console.log(auth)
   return (
-    <div className='i'>
+    <div>
       <Header />
-      <Body />
+      <Routes />
     </div>
   )
 }
