@@ -1,6 +1,9 @@
 import {StyleSheet} from 'react-native';
 import {Colors} from '../../../utils/constants/colors';
-import {containerPadding} from '../../../utils/constants/globalstyles';
+import {
+  borderRadius,
+  containerPadding,
+} from '../../../utils/constants/globalstyles';
 
 export const styles = StyleSheet.create({
   Login: {
@@ -14,12 +17,23 @@ export const styles = StyleSheet.create({
     position: 'absolute',
     backgroundColor: Colors.purssianBlue,
     width: '100%',
-    height: '20%',
+    height: '60%',
     right: 0,
     bottom: 0,
     padding: containerPadding,
+    borderTopLeftRadius: 40,
+    borderTopRightRadius: 40,
+    paddingTop: 50,
+  },
+  LoginContainer_Flex: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
   },
   LoginHeader: {
     color: Colors.white,
+  },
+  GoogleIcon: {
+    width: '10%',
+    height: '10%',
   },
 });

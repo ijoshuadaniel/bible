@@ -15,11 +15,14 @@ const LandingScreens = () => {
   const [landingContent, setLandingContent] = useState(
     LandingScreenContent.BIBLE_READING,
   );
+  const [showLogin, setShowLogin] = useState(false);
 
   const handleOnclick = () => {
     if (landingContent !== LandingScreenContent.READ_BOOKS) {
       const getLandingContent = triggerNextContent();
       setLandingContent(getLandingContent);
+    } else {
+      setShowLogin(!showLogin);
     }
   };
 
@@ -101,7 +104,9 @@ const LandingScreens = () => {
           handleOnClick={() => handleOnclick()}
         />
       </View>
-      <LoginContainer />
+      {showLogin && (
+        <LoginContainer setShowLogin={setShowLogin} showLogin={showLogin} />
+      )}
     </>
   );
 };

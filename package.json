@@ -7,9 +7,7 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint .",
-    "postinstall": "link-module-alias",
-    "preinstall": "command -v link-module-alias && link-module-alias clean || true"
+    "lint": "eslint ."
   },
   "dependencies": {
     "react": "17.0.1",
@@ -22,17 +20,10 @@
     "babel-jest": "^26.6.3",
     "eslint": "7.14.0",
     "jest": "^26.6.3",
-    "link-module-alias": "^1.2.0",
     "metro-react-native-babel-preset": "^0.64.0",
     "react-test-renderer": "17.0.1"
   },
   "jest": {
     "preset": "react-native"
-  },
-  "_moduleAliases": {
-    "src": "./src/",
-    "utils": "./utils/",
-    "constants": "./utils/constants/",
-    "pages": "./src/pages/"
   }
 }
