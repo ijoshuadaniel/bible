@@ -1,4 +1,3 @@
-import {Colors} from './colors';
 import {fontTypes, getPrimaryFont, getSecondaryFont} from './fonts';
 
 export const borderRadius = 10;
