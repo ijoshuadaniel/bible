@@ -1,10 +1,7 @@
 import {StyleSheet} from 'react-native';
 import {Colors} from '../../../utils/constants/colors';
 import {fontTypes, getPrimaryFont} from '../../../utils/constants/fonts';
-import {
-  borderRadius,
-  containerPadding,
-} from '../../../utils/constants/globalstyles';
+import {borderRadius} from '../../../utils/constants/globalstyles';
 
 export const styles = StyleSheet.create({
   SocialLogin: {

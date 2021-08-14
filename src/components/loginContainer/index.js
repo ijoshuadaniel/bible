@@ -1,10 +1,9 @@
 import React from 'react';
-import {View, Text, ScrollView, Image} from 'react-native';
+import {View, Text, ScrollView} from 'react-native';
 import {headingStyles} from '../../../utils/constants/globalstyles';
 import {
   googleIcon,
   facebookIcon,
-  twitterIcon,
   mailIcon,
   closeIconWhite,
 } from '../../../utils/constants/icons';
