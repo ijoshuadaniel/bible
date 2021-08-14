@@ -28,7 +28,6 @@ const LoginContainer = ({showLogin, setShowLogin}) => {
         <ScrollView showsVerticalScrollIndicator={false}>
           <SocialLogin buttonText="Login with Google" uri={googleIcon} />
           <SocialLogin buttonText="Login with Facebook" uri={facebookIcon} />
-          <SocialLogin buttonText="Login with Twitter" uri={twitterIcon} />
           <SocialLogin buttonText="Login with Email" uri={mailIcon} />
           <SocialLogin buttonText="or Create an Account" />
         </ScrollView>

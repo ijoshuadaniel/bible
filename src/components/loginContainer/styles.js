@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
     position: 'absolute',
     backgroundColor: Colors.purssianBlue,
     width: '100%',
-    height: '60%',
+    height: '50%',
     right: 0,
     bottom: 0,
     padding: containerPadding,
