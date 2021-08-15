@@ -7,12 +7,13 @@ import {
   mailIcon,
   closeIconWhite,
 } from '../../../utils/constants/icons';
+import {pathConstant} from '../../../utils/constants/pathConstant';
 import TouchableIcon from '../../ui/touchableIcon';
 import SocialLogin from '../socialLogin';
 
 import {styles} from './styles';
 
-const LoginContainer = ({showLogin, setShowLogin}) => {
+const LoginContainer = ({showLogin, setShowLogin, navigation}) => {
   return (
     <>
       <View style={styles.Login}></View>
@@ -28,7 +29,11 @@ const LoginContainer = ({showLogin, setShowLogin}) => {
           <SocialLogin buttonText="Login with Google" uri={googleIcon} />
           <SocialLogin buttonText="Login with Facebook" uri={facebookIcon} />
           <SocialLogin buttonText="Login with Email" uri={mailIcon} />
-          <SocialLogin buttonText="or Create an Account" />
+          <SocialLogin
+            buttonText="or Create an Account"
+            navigation={navigation}
+            path={pathConstant.CREATE_ACCOUNT}
+          />
         </ScrollView>
       </View>
     </>

@@ -11,7 +11,7 @@ import LoginContainer from '../../components/loginContainer';
 
 import {styles} from './styles';
 
-const LandingScreens = () => {
+const LandingScreens = ({navigation}) => {
   const [landingContent, setLandingContent] = useState(
     LandingScreenContent.BIBLE_READING,
   );
@@ -105,7 +105,11 @@ const LandingScreens = () => {
         />
       </View>
       {showLogin && (
-        <LoginContainer setShowLogin={setShowLogin} showLogin={showLogin} />
+        <LoginContainer
+          setShowLogin={setShowLogin}
+          showLogin={showLogin}
+          navigation={navigation}
+        />
       )}
     </>
   );
