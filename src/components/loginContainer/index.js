@@ -1,14 +1,14 @@
 import React from 'react';
 import {View, Text, ScrollView} from 'react-native';
-import {headingStyles} from '../../../utils/constants/globalstyles';
+import {headingStyles} from 'constants/globalstyles';
 import {
   googleIcon,
   facebookIcon,
   mailIcon,
   closeIconWhite,
-} from '../../../utils/constants/icons';
-import {pathConstant} from '../../../utils/constants/pathConstant';
-import TouchableIcon from '../../ui/touchableIcon';
+} from 'constants/icons';
+import {pathConstant} from 'constants/pathConstant';
+import TouchableIcon from 'ui/touchableIcon';
 import SocialLogin from '../socialLogin';
 
 import {styles} from './styles';

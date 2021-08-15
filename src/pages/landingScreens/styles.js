@@ -1,10 +1,7 @@
 import {StyleSheet} from 'react-native';
-import {Colors} from '../../../utils/constants/colors';
-import {getPrimaryFont, fontTypes} from '../../../utils/constants/fonts';
-import {
-  borderRadius,
-  containerPadding,
-} from '../../../utils/constants/globalstyles';
+import {Colors} from 'constants/colors';
+import {getPrimaryFont, fontTypes} from 'constants/fonts';
+import {borderRadius, containerPadding} from 'constants/globalstyles';
 
 export const styles = StyleSheet.create({
   LandingScreens: {

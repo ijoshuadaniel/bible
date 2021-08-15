@@ -10,6 +10,7 @@ import HomePage from './src/pages/homePage';
 import {Colors} from './utils/constants/colors';
 
 const Stack = createStackNavigator();
+const TabNavigator = createBottomTabNavigator();
 
 const App = () => {
   return (
@@ -19,12 +20,7 @@ const App = () => {
           name={pathConstant.HOME_PAGE}
           component={HomePage}
           options={{
-            headerStyle: {
-              backgroundColor: Colors.orange,
-              elevation: 1,
-            },
-            headerTintColor: Colors.white,
-            title: 'Home',
+            headerMode: 'none',
           }}
         />
         <Stack.Screen

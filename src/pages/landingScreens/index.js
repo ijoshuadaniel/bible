@@ -1,13 +1,10 @@
 import React, {useState} from 'react';
 import {View, Text} from 'react-native';
-import {Colors} from '../../../utils/constants/colors';
-import {LandingScreenContent} from '../../../utils/constants/constant';
-import {
-  headingStyles,
-  subheadingStyles,
-} from '../../../utils/constants/globalstyles';
-import CustomButton from '../../components/customButton/index';
-import LoginContainer from '../../components/loginContainer';
+import {Colors} from 'constants/colors';
+import {LandingScreenContent} from 'constants/constant';
+import {headingStyles, subheadingStyles} from 'constants/globalstyles';
+import CustomButton from 'components/customButton/index';
+import LoginContainer from 'components/loginContainer';
 
 import {styles} from './styles';
 

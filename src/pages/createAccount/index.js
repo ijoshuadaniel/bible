@@ -1,18 +1,15 @@
 import React from 'react';
 import {SafeAreaView, ScrollView, StatusBar, Text, View} from 'react-native';
-import {
-  headingStyles,
-  subheadingStyles,
-} from '../../../utils/constants/globalstyles';
-import CustomButton from '../../components/customButton';
-import TouchableIcon from '../../ui/touchableIcon';
-import {closeIconBlack} from '../../../utils/constants/icons';
-import {pathConstant} from '../../../utils/constants/pathConstant';
-import textConstants from '../../../utils/constants/textConstant';
-import {Colors} from '../../../utils/constants/colors';
+import {headingStyles, subheadingStyles} from 'constants/globalstyles';
+import CustomButton from 'components/customButton';
+import TouchableIcon from 'ui/touchableIcon';
+import {closeIconBlack} from 'constants/icons';
+import {pathConstant} from 'constants/pathConstant';
+import textConstants from 'constants/textConstant';
+import {Colors} from 'constants/colors';
+import LoginInput from 'ui/loginInput';
 
 import {styles} from './styles';
-import LoginInput from '../../ui/loginInput';
 
 const CreateAccount = ({navigation}) => {
   return (

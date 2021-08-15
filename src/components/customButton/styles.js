@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
-import {fontTypes, getSecondaryFont} from '../../../utils/constants/fonts';
-import {borderRadius} from '../../../utils/constants/globalstyles';
+import {fontTypes, getSecondaryFont} from 'constants/fonts';
+import {borderRadius} from 'constants/globalstyles';
 
 export const styles = StyleSheet.create({
   CustomButton: {

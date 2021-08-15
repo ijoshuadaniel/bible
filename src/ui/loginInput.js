@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text, TextInput, StyleSheet} from 'react-native';
-import {fontTypes, getPrimaryFont} from '../../utils/constants/fonts';
+import {fontTypes, getPrimaryFont} from 'constants/fonts';
 
 const LoginInput = ({
   type,
