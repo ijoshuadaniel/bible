@@ -1,10 +1,13 @@
 import {StyleSheet} from 'react-native';
 import {Colors} from 'constants/colors';
+import {containerPadding} from 'constants/globalstyles';
 
 export const styles = StyleSheet.create({
   HomePage: {
-    flex: 2,
-    justifyContent: 'space-between',
+    backgroundColor: Colors.white,
+    padding: containerPadding,
+    width: '100%',
+    height: '82%',
   },
   HomePage_bottomBar: {
     flexDirection: 'row',
