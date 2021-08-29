@@ -4,7 +4,7 @@ import {containerPadding} from 'constants/globalstyles';
 
 export const styles = StyleSheet.create({
   HomePage: {
-    backgroundColor: Colors.white,
+    backgroundColor: Colors.lightWhite,
     padding: containerPadding,
     width: '100%',
     height: '82%',

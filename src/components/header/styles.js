@@ -6,7 +6,7 @@ export const styles = StyleSheet.create({
   CustomHeader: {
     width: '100%',
     height: '10%',
-    backgroundColor: Colors.white,
+    backgroundColor: Colors.lightWhite,
     shadowColor: Colors.black,
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -14,6 +14,7 @@ export const styles = StyleSheet.create({
     paddingBottom: 10,
     paddingHorizontal: 20,
     borderBottomWidth: 1,
+    borderColor: Colors.lightGrey,
   },
   Tab: {
     fontFamily: getPrimaryFont(fontTypes.BOLD),
